@@ -15,4 +15,5 @@ for i in range(n):
     x = int(input())
     if x == 0:
         count += 1
-print(count)
+        
+print(count if count < n/2 else n - count)
