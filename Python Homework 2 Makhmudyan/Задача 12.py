@@ -19,14 +19,26 @@
 # print(f"Задуманные числа: X = {X} и Y = {Y}")
 
 
+# S = int(input('Введите сумму S: '))
+# P = int(input('Введите произведение P: '))
+# for x in range (1,P):
+#     if S - x == P / x:
+#         X = x
+#         break
+# Y = S - X
+# print(S,P,'->',Y,X)
+
+
 S = int(input('Введите сумму S: '))
 P = int(input('Введите произведение P: '))
-for x in range (1,P):
-    if S - x == P / x:
-        X = x
-        break
-Y = S - X
-print(S,P,'->',Y,X)
+
+def f():
+    for i in range(S + 1):
+        for j in range(S + 1):
+            if i + j == S and i * j == P:
+                return i, j
+            
+print(f())
 
 
 
