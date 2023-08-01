@@ -16,10 +16,15 @@ c = int(input('Введите количество элементов: '))
 
 list1 = []
 
-for i in range(c):
-    print(i)
-    an = a + i * b
-    list1.append(an)
+# for i in range(c):
+#     print(i)
+#     an = a + i * b
+#     list1.append(an)
+
+for i in  range(c):
+    list1.append(a)
+    a += b
+
    
 print(list1)
 
