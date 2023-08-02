@@ -17,5 +17,5 @@ m = int(input('Введите максимум диапазона: '))
 list2 = []
 for i in range(len(list1)):
     if list1[i] >= n and list1[i] <= m:
-        list2.append(list1[i])
+        list2.append(i)
 print(list2)
